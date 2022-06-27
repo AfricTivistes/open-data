@@ -1,10 +1,11 @@
 ---
+import { t } from "i18next";
 import ContentSection from "~/components/content-section.astro";
 import ShowcaseCard from '~/components/showcase-card.astro';
 import sites from "~/data/showcase/sites.json";
 ---
 
-<ContentSection title="Showcase" id="showcase">
+<ContentSection title={t("showcase.title")} id="showcase">
   <Fragment slot="lead">
     Astro is <span class="text-primary">versatile</span>.{" "}
     <span class="text-primary">Explore</span> what's possible and get{" "}

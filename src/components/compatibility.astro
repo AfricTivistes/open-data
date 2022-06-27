@@ -1,4 +1,5 @@
 ---
+import { t } from "i18next";
 import ContentSection from "~/components/content-section.astro";
 import CompatibilityList from "~/components/compatibility-list.astro";
 
@@ -69,7 +70,7 @@ const platforms = [
 ];
 ---
 
-<ContentSection title="Compatibility" id="compatibility">
+<ContentSection title={t("compatibility.title")} id="compatibility">
   <Fragment slot="lead">
     Astro <span class="text-primary">plays nice</span>. Bring your own UI{" "}
     <span class="text-primary">framework</span>

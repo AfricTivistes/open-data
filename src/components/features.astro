@@ -1,4 +1,5 @@
 ---
+import { t } from "i18next";
 import ContentSection from "~/components/content-section.astro";
 import { Icon } from "astro-icon";
 
@@ -42,7 +43,7 @@ const features = [
 ];
 ---
 
-<ContentSection title="Features" id="features">
+<ContentSection title={t("features.title")} id="features">
   <Fragment slot="lead">
     Astro comes <span class="text-primary">batteries included</span>. It takes
     the best parts of
