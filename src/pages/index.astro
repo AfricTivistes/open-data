@@ -1,10 +1,13 @@
 ---
+import i18next from "i18next";
 import Layout from '../layouts/index.astro';
 import Compatibility from "~/components/compatibility.astro";
 import Features from "~/components/features.astro";
 import Intro from "~/components/intro.astro";
 import Showcase from "~/components/showcase.astro";
 import Splash from "~/components/splash.astro";
+
+i18next.changeLanguage(i18next.options.supportedLngs[0]);
 ---
 
 <Layout>

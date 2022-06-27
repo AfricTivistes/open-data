@@ -1,0 +1,28 @@
+{
+  "site": {
+    "title": "Open Data - AfricTivistes",
+    "description": "Open Data, Africtivists a platform to promote open data-driven democracy on the African continent."
+  },
+  "seo": {
+    "ogTitle": "astro-i18next | Traduisez vos sites web Astro avec i18next !",
+    "ogImageAlt": "Un tube à essai placé dans le coin en bas à gauche et qui propage le texte astro-i18next avec des bulles et des drapeaux de pays."
+  },
+  "navigation": {
+    "about": "About",
+    "data": "Data",
+    "publication": "Publication"
+  },
+  "intro": {
+    "title": "AfricTivistes",
+    "subtitle": "This is a <0>more complex</0> string to translate, mixed with <1>html elements</1>, such as a <2>a cool link</2>!"
+  },
+  "features": {
+    "title": "Who uses Open Data ?"
+  },
+  "compatibility": {
+    "title": "Data"
+  },
+  "showcase": {
+    "title": "Piblications"
+  }
+}

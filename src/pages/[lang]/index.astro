@@ -1,0 +1,35 @@
+---
+import i18next from "i18next";
+import Layout from '../../layouts/index.astro';
+import Compatibility from "~/components/compatibility.astro";
+import Features from "~/components/features.astro";
+import Intro from "~/components/intro.astro";
+import Showcase from "~/components/showcase.astro";
+import Splash from "~/components/splash.astro";
+
+export function getStaticPaths() {
+  const languageRoutes = [];
+  i18next.languages.forEach((lang) => {
+    // filter out base language
+    // i18next.options.supportedLngs[0] is the base language from config
+    if (lang !== i18next.options.supportedLngs[0]) {
+      languageRoutes.push({ params: { lang } });
+    }
+  });
+  return languageRoutes;
+}
+
+const { lang } = Astro.params;
+
+i18next.changeLanguage(lang as string);
+---
+
+<Layout>
+  <Splash />
+  <div class="px-8 py-32 space-y-24">
+    <Intro />
+    <Features />
+    <Compatibility />
+    <Showcase />
+  </div>
+</Layout>
